@@ -1,0 +1,36 @@
+/*estilos de contact*/
+
+body{
+    .container{            
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr 2fr;
+        grid-template-rows:2fr 2fr ;    
+        grid-template-areas: 
+        "header header header section"
+        "main main main section";
+     }
+     main{
+        .info{
+            p{
+              @extend %estilosParrafo;
+            }
+        }
+        .formulario-contacto{
+            form{
+                .btn{
+                    background-color: $color-terciario;
+                    width: 5rem;
+                    padding: 0.5 rem;
+                    .mb-3{
+                        #exampleInputPassword1{
+                            height: 8rem;
+                        }
+
+                    }
+
+                }
+            }
+        }
+    }
+
+}

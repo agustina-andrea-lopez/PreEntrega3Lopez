@@ -1,0 +1,174 @@
+/*reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body .years .contenedor-about p, body main .banner-projects p, body main .card .card-body p, body main .banner-servicies .contador p, body main .contenedor-services .service p, body main .info p {
+  color: black;
+  font-size: 1rem;
+  text-align: left; }
+
+/*estilos del home*/
+body header main .contenedor-uno {
+  background-color: black;
+  height: 30rem;
+  overflow: hidden;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-around; }
+  body header main .contenedor-uno h1 {
+    color: white; }
+  body header main .contenedor-uno img {
+    height: 30rem; }
+
+body header main .contenedor-dos {
+  height: 70%;
+  width: 70%;
+  padding: 5%; }
+
+/* estilos de about*/
+body main .banner-about {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 10%; }
+  body main .banner-about .info {
+    text-transform: uppercase; }
+  body main .banner-about .imagen-about img {
+    height: 20rem; }
+
+body .years {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-top: 2rem;
+  padding-left: 2rem; }
+  body .years .contenedor-about .numero {
+    font-size: 11rem;
+    font-weight: bold;
+    color: aqua; }
+
+body .tools {
+  background-color: black;
+  margin-top: 1rem;
+  padding-top: 1rem; }
+  body .tools .logos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; }
+  body .tools h4 {
+    color: white;
+    text-align: center; }
+
+/* estilos de projects*/
+body main .banner-projects {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
+  body main .banner-projects p {
+    text-transform: uppercase; }
+
+body main .card .card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  body main .card .card-body h3 {
+    font-size: 1rem; }
+
+/*estilos de services*/
+body main .banner-servicies {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly; }
+  body main .banner-servicies .contador h3 {
+    color: fuchsia;
+    font-size: 4rem; }
+
+body main .contenedor-services {
+  height: 20rem;
+  background-color: white;
+  text-align: center;
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly; }
+  body main .contenedor-services .service h4:hover {
+    text-align: center;
+    font-size: 2rem; }
+
+/*estilos de contact*/
+body .container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 2fr;
+  grid-template-rows: 2fr 2fr;
+  grid-template-areas: "header header header section" "main main main section"; }
+
+body main .formulario-contacto form .btn {
+  background-color: fuchsia;
+  width: 5rem;
+  padding: 0.5 rem; }
+  body main .formulario-contacto form .btn .mb-3 #exampleInputPassword1 {
+    height: 8rem; }
+
+/*md*/
+@media (max-width: 600px) {
+  /* estilos de home*/
+  body main .contenedor-uno {
+    height: 10rem; }
+    body main .contenedor-uno img {
+      height: 10rem; }
+  body main .contenedor-dos {
+    height: 80%;
+    width: 80%;
+    margin-bottom: 2rem; }
+  /* estilos de about*/
+  body main .banner-about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem; }
+  body main .years .contenedor-about {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  body main .tools .logos {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  /* estilos de services*/
+  body main .contenedor-services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%; } }
+
+/* estilos del body*/
+body header {
+  font-family: 'Poppins'sans-serif;
+  font-family: 'Roboto', sans-serif; }
+  body header .navbar-nav .nav-link {
+    top: 0%;
+    color: black; }
+    body header .navbar-nav .nav-link:hover {
+      color: fuchsia; }
+
+/* estilos de footer*/
+footer {
+  background-color: white;
+  height: 5rem;
+  padding-top: 1.5rem; }
+  footer .social {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; }

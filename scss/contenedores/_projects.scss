@@ -1,0 +1,28 @@
+/* estilos de projects*/
+
+body{
+     main{
+        .banner-projects{        
+            @include flex-row; 
+            justify-content: space-around;           
+            padding-top: 2rem;
+            padding-bottom:  2rem;   
+            p{
+                @extend %estilosParrafo;
+                text-transform: uppercase ;
+            }
+        }
+        .card{
+            .card-body{
+                @include flex-column;                            
+                p{
+                  @extend %estilosParrafo;
+                }
+                h3{
+                    font-size: 1rem;
+                }
+            }
+        }
+
+     }
+}

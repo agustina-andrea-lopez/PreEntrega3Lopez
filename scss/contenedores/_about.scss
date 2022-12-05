@@ -1,0 +1,50 @@
+/* estilos de about*/
+
+body{
+    main{
+        .banner-about {
+            @include flex-row;      
+            justify-content: space-around;
+            padding-top: 10%;        
+            .info{
+            text-transform: uppercase ;                
+            }          
+            .imagen-about{
+                    img{
+                        height: 20rem;
+                    }
+            } 
+        }
+        
+    }
+    .years{
+        @include flex-column;
+        justify-content: space-evenly;  
+        padding-top: 2rem;   
+        padding-left: 2rem;
+        .contenedor-about{
+            .numero{
+                font-size: 11rem;
+                font-weight: bold;
+                color: $color-secundario;
+            }
+            p{
+                @extend %estilosParrafo;
+            }
+        } 
+    }
+    .tools {
+        background-color: $color-principal;   
+        margin-top: 1rem;
+        padding-top: 1rem;   
+        .logos{
+            @include flex-row;
+            justify-content: center;     
+        }        
+        h4{
+            color: $color-principal-dos;
+            text-align: center;
+        }
+    }       
+    
+}

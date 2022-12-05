@@ -1,0 +1,31 @@
+/*estilos del home*/ 
+
+body{
+    header{    
+        main{
+            .contenedor-uno{
+                background-color: $color-principal;
+                height: 30rem;
+                overflow: hidden; 
+                display: flex;
+                flex-flow: row nowrap;
+                align-items: center;
+                justify-content: space-around;
+                h1{          
+                    color: $color-principal-dos;  
+                }
+                img{    
+                    height: 30rem;     
+                  }
+            }
+            .contenedor-dos{
+                height:70%;
+                width: 70%;
+                padding: 5%;
+             }
+
+        }
+
+    }
+}
+

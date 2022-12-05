@@ -1,0 +1,54 @@
+/*reset*/ 
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+// importando archivos secundarios
+
+@import "utilidades/variables";
+@import "utilidades/mixin";
+@import "utilidades/extend";
+@import "contenedores/index";
+@import "contenedores/about";
+@import "contenedores/projects";
+@import "contenedores/services";
+@import "contenedores/contact";
+@import "contenedores/mediaquery";
+
+
+/* estilos del body*/
+
+body{
+    header{
+      font-family:'Poppins'sans-serif;
+      font-family: 'Roboto', sans-serif;
+      .navbar-nav{
+            .nav-link{   
+                top: 0%; 
+                color: $color-principal;
+                &:hover{   
+                    color: $color-terciario;   
+                   }   
+            }
+            
+        }
+        
+    }
+}
+
+
+/* estilos de footer*/
+    
+footer{
+    background-color: $color-principal-dos; 
+    height: 5rem;  
+    padding-top: 1.5rem;
+    .social{
+        @include flex-row;
+        justify-content: center;      
+     }         
+  } 

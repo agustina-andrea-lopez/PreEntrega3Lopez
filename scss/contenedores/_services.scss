@@ -1,0 +1,40 @@
+/*estilos de services*/
+
+body{
+    main{
+        .banner-servicies {    
+            @include flex-row;
+            justify-content: space-evenly;
+            .contador{
+                h3{
+                    color: $color-terciario;
+                    font-size: 4rem;     
+                } 
+                p{
+                    @extend %estilosParrafo;
+                }
+            }        
+        }
+
+        .contenedor-services{            
+            height: 20rem ;
+            background-color: $color-principal-dos;
+            text-align: center;
+            padding: 1rem;
+            @include flex-row;
+            justify-content: space-evenly; 
+            .service{
+                h4{
+                    &:hover{   
+                        text-align: center;
+                        font-size: 2rem;   
+                    }  
+                }   
+                p{
+                    @extend %estilosParrafo;
+                }
+            }
+         }
+
+    }
+}

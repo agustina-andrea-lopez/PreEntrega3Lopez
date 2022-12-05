@@ -1,0 +1,63 @@
+/*md*/
+
+@media (max-width: 600px) {
+
+    /* estilos de home*/
+ 
+    body{
+        main{
+            .contenedor-uno{
+               height: 10rem;  
+               img{
+                 height: 10rem;                
+                }    
+            }    
+            .contenedor-dos{
+                height: 80%;
+                width: 80%;
+                margin-bottom: 2rem;                
+             }            
+        }        
+    }
+ 
+ 
+    /* estilos de about*/
+
+    body{
+        main{ 
+            .banner-about {    
+                @include flex-column;
+                padding: 2rem;            
+            }        
+            
+            .years{
+                .contenedor-about{      
+                    @include flex-column;
+                }                
+            }       
+            .tools{ 
+                .logos{
+                    @include flex-column;
+                }
+
+            }
+        }
+    }
+            
+ 
+    /* estilos de services*/
+     
+    body{
+        main{
+            .contenedor-services {    
+                @include flex-column;
+                height: 100%;            
+            }      
+        
+        }
+    } 
+}
+
+ 
+
+    
